@@ -3,22 +3,25 @@ import { useTheme } from "./ThemeContext";
 
 function HomePage() {
   const navigate = useNavigate();
-  const {setTheme} = useTheme();
+  const {theme, setTheme} = useTheme();
   const goToLab1 = () => {
     setTheme({
-      "experiment":"Self Paced Reading"
+      ...theme,
+      experiment:"Self Paced Reading"
     });
     navigate("/overview");
   };
   const goToLab2 = () => {
     setTheme({
-      "experiment":"Moving Window"
+      ...theme,
+      experiment:"Moving Window"
     })
     navigate("/overview");
   };
   const goToLab3 = () => {
     setTheme({
-      "experiment":"EEG/fMRI Study"
+      ...theme,
+      experiment:"EEG/fMRI Study"
     })
     navigate("/overview");
   }

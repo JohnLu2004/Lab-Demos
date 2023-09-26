@@ -44,6 +44,7 @@ export default function EEGfMRIStudyPage() {
         setLineCondition(Math.floor(Math.random() * (3 - 0 + 1)) + 0);
         //update
         setTheme({
+          ...theme,
           lineNumber: theme["lineNumber"] + 1,
         });
         if (theme["lineNumber"] == 0) {
@@ -55,6 +56,7 @@ export default function EEGfMRIStudyPage() {
       //if they do more than x sentences, send them back
       if (theme["lineNumber"] >= 4) {
         setTheme({
+          ...theme,
           lineNumber: -1,
         });
         navigate("/");
@@ -70,6 +72,7 @@ export default function EEGfMRIStudyPage() {
         navigate("/comprehension");
         //update
         setTheme({
+          ...theme,
           lineNumber: theme["lineNumber"] + 1,
         });
       }

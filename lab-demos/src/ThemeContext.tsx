@@ -1,10 +1,7 @@
 // ThemeContext.js
 import { createContext, useState, useContext } from "react";
 
-export const ThemeContext = createContext({
-  lineNumber: -1,
-  experiment: null,
-});
+export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState({

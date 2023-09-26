@@ -58,11 +58,13 @@ export default function SelfPacedReadingPage() {
 
         //update
         setTheme({
+          ...theme,
           lineNumber: theme["lineNumber"] + 1,
         });
         if (theme["lineNumber"] == 0) {
           setTheme({
-            theme["experiment"]:"Self Paced Reading"
+            ...theme,
+            experiment: "Self Paced Reading",
           });
           navigate("/comprehension");
         }
@@ -72,6 +74,7 @@ export default function SelfPacedReadingPage() {
       //if they do more than x sentences, send them back
       if (theme["lineNumber"] >= 4) {
         setTheme({
+          ...theme,
           lineNumber: -1,
         });
         navigate("/");
@@ -87,6 +90,7 @@ export default function SelfPacedReadingPage() {
         navigate("/comprehension");
         //update
         setTheme({
+          ...theme,
           lineNumber: theme["lineNumber"] + 1,
         });
       }

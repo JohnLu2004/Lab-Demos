@@ -58,7 +58,8 @@ export default function Sequencing() {
 
         //update
         setTheme({
-          "lineNumber": theme["lineNumber"]+1
+          ...theme,
+          lineNumber: theme["lineNumber"]+1
         });
         if (theme["lineNumber"] == 0) {
           navigate("/comprehension");
@@ -69,7 +70,8 @@ export default function Sequencing() {
       //if they do more than x sentences, send them back
       if (theme["lineNumber"] >= 4) {
         setTheme({
-          "lineNumber": -1
+          ...theme,
+          lineNumber: -1
         });
         navigate("/");
       }
@@ -84,7 +86,8 @@ export default function Sequencing() {
         navigate("/comprehension");
         //update
         setTheme({
-          "lineNumber": theme["lineNumber"]+1
+          ...theme,
+          lineNumber: theme["lineNumber"]+1
         });
       }
       setDisplay(generate(lineCondition, wordNumber));

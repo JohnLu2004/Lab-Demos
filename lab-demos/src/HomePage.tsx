@@ -3,28 +3,28 @@ import { useTheme } from "./ThemeContext";
 
 function HomePage() {
   const navigate = useNavigate();
-  const {theme, setTheme} = useTheme();
+  const { theme, setTheme } = useTheme();
   const goToLab1 = () => {
     setTheme({
       ...theme,
-      experiment:"Self Paced Reading"
+      experiment: "Self Paced Reading",
     });
     navigate("/overview");
   };
   const goToLab2 = () => {
     setTheme({
       ...theme,
-      experiment:"Moving Window"
-    })
+      experiment: "Moving Window",
+    });
     navigate("/overview");
   };
   const goToLab3 = () => {
     setTheme({
       ...theme,
-      experiment:"EEG/fMRI Study"
-    })
+      experiment: "EEG/fMRI Study",
+    });
     navigate("/overview");
-  }
+  };
   return (
     <>
       <h1>Welcome to Neurolinguistics Lab Demos!</h1>

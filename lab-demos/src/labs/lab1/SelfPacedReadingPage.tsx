@@ -40,7 +40,6 @@ function generate(lineCondition: number, wordNumber: number) {
 
 export default function SelfPacedReadingPage() {
   const navigate = useNavigate();
-  const [lineNumber, setLineNumber] = useState(0);
   const [lineCondition, setLineCondition] = useState(0);
   const [wordNumber, setWordNumber] = useState(0);
   const [display, setDisplay] = useState("Click the button to start the trial");
@@ -53,9 +52,11 @@ export default function SelfPacedReadingPage() {
       if (wordNumber >= "This is a test sentence.".split(" ").length - 1) {
         //randomize
         setWordNumber(0);
-        setLineNumber(Math.floor(Math.random() * (1 - 0 + 1)) + 0);
+        setTheme({
+          ...theme,
+          lineNumber: Math.floor(Math.random() * (1 - 0 + 1)) + 0,
+        });
         setLineCondition(Math.floor(Math.random() * (3 - 0 + 1)) + 0);
-
         //update
         setTheme({
           ...theme,
@@ -85,7 +86,10 @@ export default function SelfPacedReadingPage() {
       ) {
         //randomize
         setWordNumber(0);
-        setLineNumber(Math.floor(Math.random() * (1 - 0 + 1)) + 0);
+        setTheme({
+          ...theme,
+          lineNumber: Math.floor(Math.random() * (1 - 0 + 1)) + 0,
+        });
         setLineCondition(Math.floor(Math.random() * (3 - 0 + 1)) + 0);
         navigate("/comprehension");
         //update

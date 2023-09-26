@@ -1,0 +1,10 @@
+{
+  "title": "Comprehension and Sentence Structure Study",
+  "investigator": "Doctor Ketchum",
+  "institution": "Institute of Linguistic Neuroscience at StarDew University",
+  "purpose": "The purpose of this experiment is to investigate how people comprehend and process sentences one word at a time. We are particularly interested in understanding whether participants pause when they encounter words in a sentence that disrupt grammar, lexicon, or syntax. Your participation in this study will help us gain valuable insights into language processing and comprehension. Additionally, we can compare and contrast the results of this study against empirical studies by other scientists",
+  "procedure": "During the experiment, you will be presented with sentences one word at a time on the screen. Your task is to read each word and press the 'Continue' button to reveal the next word in the sentence. At times, the sentence may contain words that do not fit grammatically, lexically, or syntactically. It is important to note that these sentences are designed this way for research purposes and may not always make perfect sense.",
+  "dataCollection": "We will collect data on the time it takes for you to press the 'Continue' button after each word appears. This information will help us analyze whether participants pause when they encounter words that disrupt sentence structure. All data collected will be anonymized and kept confidential.",
+  "duration": 10,
+  "riskAndBenefits": "There are no known risks associated with participating in this experiment. However, by participating, you will contribute to scientific research in the field of language comprehension and processing."
+}

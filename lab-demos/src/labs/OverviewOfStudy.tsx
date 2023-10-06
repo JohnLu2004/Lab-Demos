@@ -1,31 +1,13 @@
 import { useNavigate } from "react-router";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useTheme } from "../ThemeContext";
-import LabInfo from "./lab1/labInfo.json"
+import LabInfo from "./lab1/labInfo.json";
 export default function OverviewOfStudy() {
-  const { theme } = useTheme();
   const navigate = useNavigate();
   //const { LabInfo, setLabInfo } = useState();
   const goToInstructionalForm = () => {
     navigate("/instructionalForm");
   };
-  useEffect(() => {
-    let jsonFile: string = "";
-    if (theme["experiment"] == "Self Paced Reading") {
-      jsonFile = "./lab1/labInfo.json";
-    } else if (theme["experiment"] == "Moving Window") {
-      jsonFile = "./lab2/labInfo.json";
-    } else if (theme["experiment"] == "EEG/fMRI Study") {
-      jsonFile = "./lab3/labInfo.json";
-    }
-    /*
-    fetch(jsonFile)
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => console.log(data));
-      */
-  }, []);
   return (
     <div className="instructional-text">
       <h1>Overview of Study</h1>

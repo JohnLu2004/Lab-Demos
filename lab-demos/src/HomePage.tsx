@@ -29,7 +29,7 @@ function HomePage() {
     <>
       <h1>Welcome to Neurolinguistics Lab Demos!</h1>
       <div>
-        <button onClick={goToLab1}>Lab 1: Self Paced Reading</button>
+        <button onClick={goToLab1}>Lab 1: Self-Paced Reading</button>
       </div>
       <div>
         <button onClick={goToLab2}>Lab 2: Moving Window</button>

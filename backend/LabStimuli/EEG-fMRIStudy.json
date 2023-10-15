@@ -1,0 +1,172 @@
+{
+  "counterBalancingLists": {
+    "1": [
+      "1a",
+      "2b",
+      "3c",
+      "4d",
+      "5a",
+      "6b",
+      "7c",
+      "8d",
+      "9a",
+      "10b",
+      "11c",
+      "12d",
+      "13a",
+      "14b",
+      "15c",
+      "16d"
+    ],
+    "2": [
+      "1b",
+      "2c",
+      "3d",
+      "4a",
+      "5b",
+      "6c",
+      "7d",
+      "8a",
+      "9b",
+      "10c",
+      "11d",
+      "12a",
+      "13b",
+      "14c",
+      "15d",
+      "16a"
+    ],
+    "3": [
+      "1c",
+      "2d",
+      "3a",
+      "4b",
+      "5c",
+      "6d",
+      "7a",
+      "8b",
+      "9c",
+      "10d",
+      "11a",
+      "12b",
+      "13c",
+      "14d",
+      "15a",
+      "16b"
+    ],
+    "4": [
+      "1d",
+      "2a",
+      "3b",
+      "4c",
+      "5d",
+      "6a",
+      "7b",
+      "8c",
+      "9d",
+      "10a",
+      "11b",
+      "12c",
+      "13d",
+      "14a",
+      "15b",
+      "16c"
+    ]
+  },
+  "1": {
+    "a": "Though George kept on reading that silly science fiction story Susan bothered him.",
+    "b": "Though George kept on reading that silly science fiction story really bothered him.",
+    "c": "Though George kept on reading the story Susan bothered him.",
+    "d": "Though George kept on reading the story really bothered him."
+  },
+  "2": {
+    "a": "After you drank the strange looking water they discovered it was polluted.",
+    "b": "After you drank the strange looking water was discovered to be polluted.",
+    "c": "After you drank the water they discovered it was polluted.",
+    "d": "After you drank the water was discovered to be polluted."
+  },
+  "3": {
+    "a": "While Mary was mending the old grandfather clock in the hall it started chiming.",
+    "b": "While Mary was mending the old grandfather clock in the hall started to chime.",
+    "c": "While Mary was mending the clock it started chiming.",
+    "d": "While Mary was mending the clock started to chime."
+  },
+  "4": {
+    "a": "Before the king rides his beautiful white horse it's always groomed.",
+    "b": "Before the king rides his beautiful white horse is always groomed.",
+    "c": "Before the king rides his horse it's always groomed.",
+    "d": "Before the king rides his horse is always groomed."
+  },
+  "5": {
+    "a": "Wherever Alice walks her shaggy sheep dog men follow.",
+    "b": "Wherever Alice walks her shaggy sheep dog will follow.",
+    "c": "Wherever Alice walks her dog men follow.",
+    "d": "Wherever Alice walks her dog will follow."
+  },
+  "6": {
+    "a": "Because my son likes to visit people who are older the neighbors think he's terrific.",
+    "b": "Because my son likes to visit people who are older think he's a terrific neighbor.",
+    "c": "Because my son likes to visit old people the neighbors think he's terrific.",
+    "d": "Because my son likes to visit old people think he's a terrific neighbor."
+  },
+  "7": {
+    "a": "Since Jay always jogs a mile and a half this seems like a short distance to him.",
+    "b": "Since Jay always jogs a mile and a half really seems like a very short distance to him.",
+    "c": "Since Jay always jogs a mile this seems like a short distance to him.",
+    "d": "Since Jay always jogs a mile really seems like a very short distance to him."
+  },
+  "8": {
+    "a": "Though Hilda finally agreed to sing the German Christmas carols it turned out her voice was just awful.",
+    "b": "Though Hilda finally agreed to sing the German Christmas carols she chose turned out to be just awful.",
+    "c": "Though Hilda finally agreed to sing the songs it turned out her voice was just awful.",
+    "d": "Though Hilda finally agreed to sing the songs she chose turned out to be just awful."
+  },
+  "9": {
+    "a": "Anne was watching the people on the street she laughed and nobody knew why.",
+    "b": "Anne was watching the people on the street were laughing and nobody knew why.",
+    "c": "Anne was watching you she laughed and nobody knew why.",
+    "d": "Anne was watching you were laughing and nobody knew why."
+  },
+  "10": {
+    "a": "John was hitting the little blonde boy Gerry was cheering and Tom was shouting.",
+    "b": "John was hitting the little blonde boy was pitching and Gerry was coaching Tom.",
+    "c": "John was hitting Jack Gerry was cheering and Tom was shouting.",
+    "d": "John was hitting Jack was pitching and Gerry was coaching Tom."
+  },
+  "11": {
+    "a": "The children were playing a very comical game of football the television was on and Granny was knitting.",
+    "b": "The children were playing a very comical game of football was on television and Granny was knitting.",
+    "c": "The children were playing football the television was on and Granny was knitting.",
+    "d": "The children were playing football was on television and Granny was knitting."
+  },
+  "12": {
+    "a": "The irate customers were cursing the incompetent young manager all the waiters were running back and forth and everyone seemed extremely upset.",
+    "b": "The irate customers were cursing the incompetent young manager was running back and forth to the kitchen and everyone seemed extremely upset.",
+    "c": "The irate customers were cursing the manager all the waiters were running back and forth and everyone seemed extremely upset.",
+    "d": "The irate customers were cursing the manager was running back and forth to the kitchen and everyone seemed extremely upset."
+  },
+  "13": {
+    "a": "Last year my roommate was constantly cleaning our little farmhouse it always looked absolutely spotless and I couldn't stand it.",
+    "b": "Last year my roommate was constantly cleaning our little farmhouse always looked absolutely spotless and I simply couldn't stand it.",
+    "c": "Last year my roommate was constantly cleaning the house it always looked absolutely spotless and I couldn't stand it.",
+    "d": "Last year my roommate was constantly cleaning the house always looked absolutely spotless and I simply couldn't stand it."
+  },
+  "14": {
+    "a": "Sally spent all last night writing a long term paper her history exam is tomorrow and she looks completely exhausted.",
+    "b": "Sally spent all last night writing a long term paper will be due tomorrow and she already looks completely exhausted.",
+    "c": "Sally spent all last night writing another paper her history exam is tomorrow and she looks completely exhausted.",
+    "d": "Sally spent all last night writing another paper will be due tomorrow and she already looks completely exhausted."
+  },
+  "15": {
+    "a": "My little brother is cooking the barbecued chicken wings everything else is burned to a crisp and so apparently we won't have anything to eat for dinner.",
+    "b": "My little brother is cooking the barbecued chicken wings are burned to a crisp and so apparently we're not going to have anything to eat for dinner.",
+    "c": "My little brother is cooking the chicken everything else is burned to a crisp and so apparently we won't have anything to eat for dinner.",
+    "d": "My little brother is cooking the chicken is burned to a crisp and so apparently we're not going to have anything to eat for dinner."
+  },
+  "16": {
+    "a": "Susie was pushing the big red wagon it wouldn't move an inch and so the boys were making fun of her.",
+    "b": "Susie was pushing the big red wagon wouldn't move an inch and so the boys were all making fun of her.",
+    "c": "Susie was pushing the wagon it wouldn't move an inch and so the boys were making fun of her.",
+    "d": "Susie was pushing the wagon wouldn't move an inch and so the boys were all making fun of her."
+  }
+}

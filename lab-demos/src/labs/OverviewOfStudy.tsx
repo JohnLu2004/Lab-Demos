@@ -1,31 +1,72 @@
 import { useNavigate } from "react-router";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTheme } from "../ThemeContext";
-import LabInfo from "./lab1/labInfo.json";
 export default function OverviewOfStudy() {
   const navigate = useNavigate();
-  //const { LabInfo, setLabInfo } = useState();
+  const { theme } = useTheme();
+  const [labInfo, setlabInfo] = useState({
+    title: "",
+    investigator: "",
+    institution: "",
+    purpose: "",
+    dataCollection: "",
+    duration: "",
+    riskAndBenefits: "",
+  });
+  useEffect(() => {
+    const queryParams = new URLSearchParams();
+    queryParams.append("experiment", theme.experiment);
+    const url = `http://localhost:5000/getLabInfo?${queryParams.toString()}`;
+    fetch(url, {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json(); // Parse the response as JSON
+      })
+      .then((data) => {
+        // The 'data' variable now contains the JSON response
+        setlabInfo({
+          ...labInfo,
+          title: data.title,
+          investigator: data.investigator,
+          institution: data.institution,
+          purpose: data.purpose,
+          dataCollection: data.dataCollection,
+          duration: data.duration,
+          riskAndBenefits: data.riskAndBenefits,
+        });
+      })
+      .catch((error) => {
+        console.error("There was a problem with the fetch operation:", error);
+      });
+  }, []);
   const goToInstructionalForm = () => {
     navigate("/instructionalForm");
   };
   return (
     <div className="instructional-text">
       <h1>Overview of Study</h1>
-      <h2>{LabInfo.title}</h2>
-      <h2>{LabInfo.investigator}</h2>
-      <h2>{LabInfo.institution}</h2>
+      <h2>{labInfo.title}</h2>
+      <h2>{labInfo.investigator}</h2>
+      <h2>{labInfo.institution}</h2>
       <h2>Purpose of the Experiment</h2>
-      <p>{LabInfo.purpose}</p>
+      <p>{labInfo.purpose}</p>
       <h2>Data Collection</h2>
-      <p>{LabInfo.dataCollection}</p>
+      <p>{labInfo.dataCollection}</p>
       <h2>Duration</h2>
       <p>
         The experiment is expected to take approximately
-        {LabInfo.duration}
+        {" " + labInfo.duration + " "}
         minutes to complete.
       </p>
       <h2>Risks and Benefits</h2>
-      <p>{LabInfo.riskAndBenefits}</p>
+      <p>{labInfo.riskAndBenefits}</p>
       <h2>Confidentiality</h2>
       <p>
         Your personal information will remain confidential. We will not collect
@@ -41,7 +82,7 @@ export default function OverviewOfStudy() {
       <h2>Questions and Concerns</h2>
       <p>
         If you have any questions or concerns about the experiment, please feel
-        free to contact {LabInfo.investigator}.
+        free to contact {labInfo.investigator}.
       </p>
       <button className="card" onClick={goToInstructionalForm}>
         Continue

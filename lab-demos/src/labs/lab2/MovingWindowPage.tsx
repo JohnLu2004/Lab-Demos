@@ -48,8 +48,9 @@ export default function MovingWindowPage() {
 
   useEffect(() => {
     const interval = setInterval(() => {
+      setTimeout(() => setDisplay(""), 200);
       setWordNumber((wordNumber) => wordNumber + 1);
-    }, 200);
+    }, 400);
     return () => clearInterval(interval);
   }, []);
 
@@ -99,7 +100,7 @@ export default function MovingWindowPage() {
     }
   }, [wordNumber]);
   useEffect(() => {
-    setDisplay(generate(lineCondition, wordNumber));
+    setDisplay(display);
   }, [display]);
 
   return (

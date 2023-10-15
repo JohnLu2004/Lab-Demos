@@ -11,7 +11,7 @@ function test(wordNumber: number) {
   for (let i = 0; i < split.length; i++) {
     if (i != wordNumber) {
       for (let j = 0; j < split[i].length; j++) {
-        generated = generated + " ";
+        generated = generated + "_";
       }
     } else {
       generated = generated + split[i];
@@ -28,7 +28,7 @@ function generate(lineCondition: number, wordNumber: number) {
   for (let i = 0; i < split.length; i++) {
     if (i != wordNumber) {
       for (let j = 0; j < split[i].length; j++) {
-        generated = generated + " ";
+        generated = generated + "_";
       }
     } else {
       generated = generated + split[i];

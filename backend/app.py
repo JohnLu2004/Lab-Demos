@@ -12,7 +12,6 @@ def home():
 def getInfo():
     experiment = request.args.get("experiment")
     #labType = labType.replace(" ", "")
-    print("Experiment:",experiment)
     jsonFile = open("./LabInfo/"+experiment.replace(" ","").replace("/","-")+".json")
     jsonData = json.load(jsonFile)
     jsonFile.close()
@@ -20,19 +19,49 @@ def getInfo():
 
 @app.route('/getStimuli', methods=["GET"])
 def getStimuli():
+    #process arguments
     experiment = request.args.get("experiment")
-    list = request.args.get("list")
-    lineNumber = request.args.get("lineNumber")
+    list = str(request.args.get("list"))
+    lineNumber = int(request.args.get("lineNumber"))
 
-    print("Experiment:",experiment)
-    print("List Number: ",list)
-    print("Line Number: ",lineNumber)
-
-    jsonFile = open("./LabStimuli/"+experiment.replace(" ","").replace("/","-")+".json")
-    jsonData = json.load(jsonFile)
+    #make path to list and get the index and condition
+    filteredPath = experiment.replace(" ","").replace("/","-");
+    jsonFile = open("./CounterbalancingLists/"+filteredPath+".json")
+    listData = json.load(jsonFile)
     jsonFile.close()
-    command = jsonData["counterBalancingLists"][list][int(lineNumber)]
-    return jsonData[command[0]][command[1]]
+    command = listData[list][lineNumber]
+    index = command[0]
+    condition = command[1]
+
+    #make the path and load in jsonData
+    jsonFile = open("./LabStimuli/"+filteredPath+".json")
+    stimuliData = json.load(jsonFile)
+    jsonFile.close()
+    #command is the the two character string composed of the index and condition
+    return stimuliData[index][condition]
+
+@app.route("/getLabQuestions",methods=["GET"])
+def getQuestion():
+    experiment = request.args.get("experiment")
+    list = str(request.args.get("list"))
+    lineNumber = int(request.args.get("lineNumber"))
+
+    #make path to list and get the index and condition
+    filteredPath = experiment.replace(" ","").replace("/","-");
+    jsonFile = open("./CounterbalancingLists/"+filteredPath+".json")
+    listData = json.load(jsonFile)
+    jsonFile.close()
+    command = listData[list][lineNumber]
+    index = command[0]
+    condition = command[1]
+
+     #make the path and load in jsonData
+    jsonFile = open("./LabQuestions/"+filteredPath+".json")
+    questionData = json.load(jsonFile)
+    jsonFile.close()
+    #command is the the two character string composed of the index and condition
+    return {"Question":questionData[index]["Question"],
+            "Answer":questionData[index][condition]}
 
 if __name__ == '__main__':
     app.run()

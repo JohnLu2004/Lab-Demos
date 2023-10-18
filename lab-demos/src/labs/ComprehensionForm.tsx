@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
 import { useEffect, useState } from "react";
-import trialInput from "./lab1/TrialInput.json";
 import { useTheme } from "../ThemeContext";
+import { getQuestionAndAnswer } from "./fetchFunctions";
 
 function useInterval(callback, delay: number) {
   useEffect(() => {
@@ -13,6 +13,9 @@ function useInterval(callback, delay: number) {
 export default function ComprehensionForm() {
   const [timer, setTimer] = useState(0);
   const { theme } = useTheme();
+  const [question, setQuestion] = useState("");
+  const [answer, setAnswer] = useState("");
+  const [dataFetched, setDataFetched] = useState(false);
 
   useInterval(() => {
     setTimer((prevTimer) => prevTimer + 1);
@@ -24,6 +27,17 @@ export default function ComprehensionForm() {
       goToLabPage();
     }
   }, 30);
+  useEffect(() => {
+    if (!dataFetched) {
+      getQuestionAndAnswer(theme.experiment, theme.list, theme.lineNumber).then(
+        (jsonObject) => {
+          setQuestion(jsonObject["Question"]);
+          setAnswer(jsonObject["Answer"]);
+          setDataFetched(true); // Set dataFetched to true to prevent repeated calls
+        }
+      );
+    }
+  }, [dataFetched, theme.experiment, theme.list, theme.lineNumber]);
   const navigate = useNavigate();
   const goToLabPage = () => {
     if (theme["experiment"] == "Self Paced Reading") {
@@ -33,7 +47,6 @@ export default function ComprehensionForm() {
     } else if (theme["experiment"] == "EEG/fMRI Study") {
       navigate("/lab3");
     }
-    console.log(theme["experiment"]);
   };
 
   return (
@@ -43,7 +56,7 @@ export default function ComprehensionForm() {
         <div id="countdown"></div>
       </div>
       <div>
-        <p>{trialInput["1"]["comprehensionQuestion"]}</p>
+        <p>{question}</p>
         <div className="flex">
           <button onClick={goToLabPage}>Yes</button>
           <button onClick={goToLabPage}>No</button>

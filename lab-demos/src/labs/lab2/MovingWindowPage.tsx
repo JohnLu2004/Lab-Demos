@@ -3,45 +3,28 @@ import "./Lab2.css";
 import { useNavigate } from "react-router";
 
 import { useTheme } from "../../ThemeContext";
-import trialInput from "./TrialInput.json";
+
+import { generateSentence, getSentenceArray } from "../fetchFunctions";
 
 function testSentencing(wordNumber: number) {
   const testString: string = "This is a test sentence.";
   const split: string[] = testString.split(" ");
-  let generated: string = "";
+  let wholeString: string = "";
   for (let i = 0; i < split.length; i++) {
     if (i != wordNumber) {
       for (let j = 0; j < split[i].length; j++) {
-        generated = generated + " ";
+        wholeString = wholeString + " ";
       }
     } else {
-      generated = generated + split[i];
+      wholeString = wholeString + split[i];
     }
-    generated = generated + " ";
+    wholeString = wholeString + " ";
   }
-  return generated;
-}
-
-function generate(lineCondition: number, wordNumber: number) {
-  const split: string[] =
-    trialInput["1"]["sentences"][lineCondition].split(" ");
-  let generated: string = "";
-  for (let i = 0; i < split.length; i++) {
-    if (i != wordNumber) {
-      for (let j = 0; j < split[i].length; j++) {
-        generated = generated + " ";
-      }
-    } else {
-      generated = generated + split[i];
-    }
-    generated = generated + " ";
-  }
-  return generated;
+  return wholeString;
 }
 
 export default function MovingWindowPage() {
   const navigate = useNavigate();
-  const [lineCondition, setLineCondition] = useState(0);
   const [wordNumber, setWordNumber] = useState(0);
   const [display, setDisplay] = useState("Click the button to start the trial");
   const { theme, setTheme } = useTheme();
@@ -62,7 +45,6 @@ export default function MovingWindowPage() {
       if (wordNumber >= test.split(" ").length - 1) {
         //randomize
         setWordNumber(0);
-        setLineCondition(Math.floor(Math.random() * (3 - 0 + 1)) + 0);
         //update
         setTheme({
           ...theme,
@@ -82,21 +64,29 @@ export default function MovingWindowPage() {
         });
         navigate("/");
       }
-      if (
-        wordNumber >=
-        trialInput["1"]["sentences"][lineCondition].split(" ").length
-      ) {
-        //randomize
-        setWordNumber(0);
-        setLineCondition(Math.floor(Math.random() * (3 - 0 + 1)) + 0);
-        navigate("/comprehension");
-        //update
-        setTheme({
-          ...theme,
-          lineNumber: theme["lineNumber"] + 1,
-        });
-      }
-      setDisplay(generate(lineCondition, wordNumber));
+      getSentenceArray(theme.experiment, theme.list, theme.lineNumber).then(
+        (sentenceArray) => {
+          if (Array.isArray(sentenceArray)) {
+            if (wordNumber >= sentenceArray.length) {
+              //randomize
+              setWordNumber(0);
+              navigate("/comprehension");
+              //update
+              setTheme({
+                ...theme,
+                lineNumber: theme["lineNumber"] + 1,
+              });
+            }
+          }
+        }
+      );
+      generateSentence(
+        theme.experiment,
+        theme.list,
+        theme.lineNumber,
+        wordNumber,
+        " "
+      ).then((sentence) => setDisplay(sentence));
     }
   }, [wordNumber]);
   useEffect(() => {

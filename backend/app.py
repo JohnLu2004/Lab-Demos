@@ -2,7 +2,7 @@ from flask import (Flask, jsonify, request)
 from flask_cors import CORS
 import json
 app = Flask(__name__)
-CORS(app,origins="http://localhost:5173")
+CORS(app,origins="*")
 
 @app.route('/', methods=["GET","POST","DELETE","READ"])
 def home():
@@ -12,6 +12,7 @@ def home():
 def getInfo():
     experiment = request.args.get("experiment")
     #labType = labType.replace(" ", "")
+    
     jsonFile = open("./LabInfo/"+experiment.replace(" ","").replace("/","-")+".json")
     jsonData = json.load(jsonFile)
     jsonFile.close()

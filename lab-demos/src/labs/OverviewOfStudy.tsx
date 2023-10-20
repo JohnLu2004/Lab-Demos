@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router";
 import { useEffect, useState } from "react";
 import { useTheme } from "../ThemeContext";
+import "./Template.css";
 export default function OverviewOfStudy() {
   const navigate = useNavigate();
   const { theme } = useTheme();

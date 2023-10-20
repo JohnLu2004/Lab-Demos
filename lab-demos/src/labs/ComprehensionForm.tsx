@@ -2,6 +2,7 @@ import { useNavigate } from "react-router";
 import { useEffect, useState } from "react";
 import { useTheme } from "../ThemeContext";
 import { getQuestionAndAnswer } from "./fetchFunctions";
+import "./Template.css";
 
 function useInterval(callback, delay: number) {
   useEffect(() => {

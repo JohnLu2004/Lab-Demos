@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
-import "./lab1/Lab1.css";
 import { useTheme } from "../ThemeContext";
 import { useState, useEffect } from "react";
+import "./Template.css";
 
 export default function InstructionalForm() {
   const navigate = useNavigate();
@@ -53,7 +53,9 @@ export default function InstructionalForm() {
       });
   }, []);
   const goToLab = () => {
-    if (theme["experiment"] == "Self Paced Reading") {
+    if (theme["experiment"] == "List Lesson") {
+      navigate("/lab0");
+    } else if (theme["experiment"] == "Self Paced Reading") {
       navigate("/lab1");
     } else if (theme["experiment"] == "Moving Window") {
       navigate("/lab2");

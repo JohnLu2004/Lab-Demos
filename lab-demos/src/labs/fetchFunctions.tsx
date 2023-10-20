@@ -84,7 +84,6 @@ export async function getQuestionAndAnswer(
   const stringLineNumber: string = lineNumber.toString();
   queryParams.append("lineNumber", stringLineNumber);
   const url = `http://localhost:5000/getLabQuestions?${queryParams.toString()}`;
-  console.log(url);
   const response = await fetch(url, {
     method: "GET",
     headers: {

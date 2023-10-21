@@ -1,0 +1,21 @@
+How many minimum number of data points for each condition?
+Minimum is 4 data points. In Neuroscience, 48
+How many items do we need?
+If we have 3 conditions, then in the behavioural domain reading study, we only need 4 data points per condition. 3 x 4 = 12 buttons. It'd be fine to have more. 48 x 3 = 144. Signal to noise ratio. Need to bring that up. 
+Two purposes
+- ensures that each condition is tested equally
+- ensures that each participant will be tested on each condition an equal number of times
+
+In behavoiural domain, it'll be 3 x 4 = 12 so the last one in a counterbalancing list will be 12 callback
+In a neuroscience domain, it'll be item 48 callback
+
+
+Each item and condition is called trial. What exactly does trial mean? A trial is a one event that occurs in an experiment. We show 1 trial. Then a break. Then another trial. Of course, we also randomize(pseudo-randomization or constrained randomization)
+
+Left justify the first page(paragraphs and headers and button too)
+Make sure it fits in one line
+Collect statistics. Average and standard deviation. Regression analysis
+
+Make  lab 4. False study(whole sentence). Eye tracker is hard to have and privacy issues???
+
+Meeting on November 3rd, Friday at 3pm at Mako's office

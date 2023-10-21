@@ -55,7 +55,7 @@ export default function InstructionalForm() {
   const goToLab = () => {
     if (theme["experiment"] == "List Lesson") {
       navigate("/lab0");
-    } else if (theme["experiment"] == "Self Paced Reading") {
+    } else if (theme["experiment"] == "Self-Paced Reading") {
       navigate("/lab1");
     } else if (theme["experiment"] == "Moving Window") {
       navigate("/lab2");

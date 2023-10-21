@@ -1,5 +1,14 @@
 import { json } from "react-router";
-
+export async function getLabs() {
+  const response = await fetch("http://localhost:5000/getLab", {
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+    },
+  });
+  const jsonData = await response.json();
+  return jsonData;
+}
 export async function getSentenceArray(
   experiment: string,
   list: number,

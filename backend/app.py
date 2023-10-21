@@ -8,11 +8,18 @@ CORS(app,origins="*")
 def home():
     return 'Hello, World!'
 
+@app.route('/getLabs', methods=["GET"])
+def getLabs():
+    jsonFile = open("./labs.json/")
+    jsonData = json.load(jsonFile)
+    jsonFile.close()
+    return jsonData
+
 @app.route('/getLabInfo', methods=["GET"])
 def getInfo():
     experiment = request.args.get("experiment")
     #labType = labType.replace(" ", "")
-    
+
     jsonFile = open("./LabInfo/"+experiment.replace(" ","").replace("/","-")+".json")
     jsonData = json.load(jsonFile)
     jsonFile.close()
@@ -27,6 +34,7 @@ def getStimuli():
 
     #make path to list and get the index and condition
     filteredPath = experiment.replace(" ","").replace("/","-");
+    print(filteredPath)
     jsonFile = open("./CounterbalancingLists/"+filteredPath+".json")
     listData = json.load(jsonFile)
     jsonFile.close()

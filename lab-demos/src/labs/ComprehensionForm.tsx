@@ -41,7 +41,7 @@ export default function ComprehensionForm() {
   }, [dataFetched, theme.experiment, theme.list, theme.lineNumber]);
   const navigate = useNavigate();
   const goToLabPage = () => {
-    if (theme["experiment"] == "Self Paced Reading") {
+    if (theme["experiment"] == "Self-Paced Reading") {
       navigate("/lab1");
     } else if (theme["experiment"] == "Moving Window") {
       navigate("/lab2");

@@ -1,0 +1,100 @@
+{
+  "array": [
+    {
+      "sentenceArray": ["This", "is", "a", "test", "sentence"],
+      "timeArray": ["0.152", "0.163", "0.157", "0.159", "0.163"]
+    },
+    {
+      "sentenceArray": [
+        "What",
+        "are",
+        "cartoons",
+        "about",
+        "enjoyed",
+        "by",
+        "Mary?"
+      ],
+      "timeArray": [
+        "0.164",
+        "0.159",
+        "0.143",
+        "0.158",
+        "0.176",
+        "0.195",
+        "0.195"
+      ],
+      "answer": "yes"
+    },
+    {
+      "sentenceArray": [
+        "Was",
+        "a",
+        "note",
+        "about",
+        "the",
+        "ransom",
+        "received",
+        "by",
+        "the",
+        "police?"
+      ],
+      "timeArray": [
+        "0.180",
+        "0.170",
+        "0.180",
+        "0.175",
+        "0.167",
+        "0.170",
+        "0.352",
+        "0.275",
+        "0.158",
+        "0.192"
+      ],
+      "answer": "yes"
+    },
+    {
+      "sentenceArray": [
+        "The",
+        "widow",
+        "asked",
+        "for",
+        "Fred\u00e2\u20ac\u2122s",
+        "advice",
+        "about",
+        "taxes."
+      ],
+      "timeArray": [
+        "0.169",
+        "0.176",
+        "0.158",
+        "0.153",
+        "0.151",
+        "0.168",
+        "0.170",
+        "0.178"
+      ],
+      "answer": "yes"
+    },
+    {
+      "sentenceArray": [
+        "Who",
+        "were",
+        "pictures",
+        "of",
+        "seen",
+        "by",
+        "Wendy."
+      ],
+      "timeArray": [
+        "0.196",
+        "0.187",
+        "0.189",
+        "0.180",
+        "0.189",
+        "0.188",
+        "0.195"
+      ],
+      "answer": "yes"
+    }
+  ]
+}

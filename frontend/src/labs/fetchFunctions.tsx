@@ -151,3 +151,20 @@ export async function sendAnswer(
     }),
   });
 }
+
+export async function counterBalance(input: string) {
+  const queryParams = new URLSearchParams();
+  queryParams.append("input", input);
+  const url = `http://localhost:5000/counterBalance?${queryParams.toString()}`;
+
+  const response = await fetch(url, {
+    method: "GET",
+    headers: {
+      Accept: "text/plain",
+      "Content-Type": "application/json",
+    },
+  });
+
+  const value: string = await response.text();
+  return value;
+}

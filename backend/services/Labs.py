@@ -119,3 +119,4 @@ def writeAnswerToStatisticsFile(jsonData):
     print("Line Number: ",lineNumber)
     with open(path, "w") as outfile:
         outfile.write(json.dumps(wholeJson))
+

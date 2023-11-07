@@ -1,11 +1,19 @@
 import "./Lab0.css";
 import { useNavigate } from "react-router";
 import { ThemeProvider } from "../../ThemeContext";
+import { counterBalance } from "../fetchFunctions";
 
 export default function ListLessonPage() {
   const navigate = useNavigate();
   const updateOnClick = () => {
     navigate("/result");
+  };
+  const translate = () => {
+    let textBox = document.getElementById("inputBox");
+    counterBalance(textBox?.value).then((output) => {
+      textBox = document.getElementById("outputBox");
+      textBox.value = output;
+    });
   };
   return (
     <>
@@ -94,6 +102,13 @@ export default function ListLessonPage() {
           In total, we would have a list of size 16 since 4 variations times 4
           tests = 16
         </p>
+
+        <textarea id="inputBox" rows={20} cols={100}></textarea>
+        <button className="mx-auto" onClick={() => translate()}>
+          Translate!
+        </button>
+        <textarea id="outputBox" rows={20} cols={100}></textarea>
+
         <button
           className="mx-auto"
           onClick={() => {

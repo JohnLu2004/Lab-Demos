@@ -19,3 +19,13 @@ Collect statistics. Average and standard deviation. Regression analysis
 Make  lab 4. False study(whole sentence). Eye tracker is hard to have and privacy issues???
 
 Meeting on November 3rd, Friday at 3pm at Mako's office
+
+Nov 3
+If you give me a text file, then counterbalance it and show shuffling/randomization error
+After counterbalancing worked, see the outcome
+
+equal number of conditions coming from different items
+
+After all the lists, it shows that each condition item was only tested once
+
+Have an equal number of participants assigned to each list

@@ -14,11 +14,6 @@ export default function MovingWindowPage() {
   const [sentenceArray, setSentenceArray] = useState<string[]>([]);
 
   useEffect(() => {
-    console.log(sentenceArray);
-    setSentenceArray(sentenceArray);
-  }, [sentenceArray]);
-
-  useEffect(() => {
     getSentenceArray(theme.experiment, theme.list, theme.lineNumber).then(
       (value: string[]) => {
         setSentenceArray(value);
@@ -51,18 +46,14 @@ export default function MovingWindowPage() {
     }
 
     generateSentence(wordNumber, "_", sentenceArray).then((sentence) => {
-      //console.log("Sentence: ", sentence);
       setDisplay(sentence);
     });
   }, [wordNumber]);
-  useEffect(() => {
-    setDisplay(display);
-  }, [display]);
 
   return (
     <>
       <div>
-        <code className="text">{" "+display+" "}</code>
+        <code className="text">{" " + display + " "}</code>
       </div>
     </>
   );

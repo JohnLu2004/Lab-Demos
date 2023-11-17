@@ -63,9 +63,7 @@ export async function generateSentence(
   let sentence: string = "";
   if (Array.isArray(sentenceArray)) {
     for (let i: number = 0; i < sentenceArray.length; i++) {
-      if (wordNumber == -1) {
-        sentence = sentence + placeHolder.repeat(sentenceArray[i].length);
-      } else if (i != wordNumber) {
+      if (wordNumber == -1 || i != wordNumber) {
         sentence = sentence + placeHolder.repeat(sentenceArray[i].length);
       } else {
         sentence = sentence + sentenceArray[i];

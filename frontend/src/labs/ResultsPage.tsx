@@ -32,14 +32,24 @@ export default function ResultsPage() {
                   <table className="w-full">
                     <tbody>
                       <tr>
+                        <td>Words</td>
                         {Object.values(object["sentenceArray"]).map((word) => (
                           <td>{word as string}</td>
                         ))}
                       </tr>
                       <tr>
+                        <td>Your Time</td>
                         {Object.values(object["timeArray"]).map((gap) => (
                           <td>{gap as string}</td>
                         ))}
+                      </tr>
+                      <tr>
+                        <td>Avg Time</td>
+                        {Object.values(object["averageTimeArray"]).map(
+                          (gap) => (
+                            <td>{gap as string}</td>
+                          )
+                        )}
                       </tr>
                     </tbody>
                   </table>
@@ -51,7 +61,9 @@ export default function ResultsPage() {
             </>
           ))}
         </div>
-        <button onClick={goToLabPage}>Return Home</button>
+        <button className="mx-auto" onClick={goToLabPage}>
+          Return Home
+        </button>
       </div>
     </div>
   );

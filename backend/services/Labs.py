@@ -97,6 +97,17 @@ def writeToStatisticsFile(jsonData):
     wholeJson = readFromStatisticsFile(fileName)
     wholeJson["array"][int(lineNumber)]["sentenceArray"]=sentenceArray;
     wholeJson["array"][int(lineNumber)]["timeArray"]=timeArray;
+    wholeJson["array"][int(lineNumber)]["numberOfEntries"]+=1;
+
+    #update average
+    for i in range(0,len(wholeJson["array"][int(lineNumber)]["timeArray"])):
+        #new data
+        newTime = wholeJson["array"][int(lineNumber)]["timeArray"][i]
+        oldTime = wholeJson["array"][int(lineNumber)]["averageTimeArray"][i]
+        entries = wholeJson["array"][int(lineNumber)]["numberOfEntries"];
+        wholeJson["array"][int(lineNumber)]["averageTimeArray"][i]=round(float((1*float(newTime) + (float(entries)-1)*float(oldTime))/(float(entries))),2);
+    print("Current:", wholeJson["array"][int(lineNumber)]["timeArray"])
+    print("Average:", wholeJson["array"][int(lineNumber)]["averageTimeArray"])
     
     with open(path, "w") as outfile:
         outfile.write(json.dumps(wholeJson))
@@ -119,4 +130,3 @@ def writeAnswerToStatisticsFile(jsonData):
     print("Line Number: ",lineNumber)
     with open(path, "w") as outfile:
         outfile.write(json.dumps(wholeJson))
-

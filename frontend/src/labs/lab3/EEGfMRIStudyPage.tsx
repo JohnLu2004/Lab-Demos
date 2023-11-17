@@ -5,31 +5,28 @@ import "./Lab3.css";
 
 import { getSentenceArray, getWord } from "../fetchFunctions";
 
-const INTERVAL_DELAY: number = 400;
+const INTERVAL_DELAY: number = 1000;
 const MAX_LINE_NUMBER: number = 4;
-
-function testSentencing(wordNumber: number): string {
-  const testString: string = "This is a test sentence.";
-  const split: string[] = testString.split(" ");
-  return split[wordNumber];
-}
 
 export default function EEGfMRIStudyPage() {
   const navigate = useNavigate();
   const [wordNumber, setWordNumber] = useState(0);
-  const [display, setDisplay] = useState("Click the button to start the trial");
+  const [display, setDisplay] = useState("+");
   const { theme, setTheme } = useTheme();
-  const [sentenceArray, setSentenceArray] = useState<string[]>();
+  const [sentenceArray, setSentenceArray] = useState<string[]>(["+"]);
 
   useEffect(() => {
     getSentenceArray(theme.experiment, theme.list, theme.lineNumber).then(
-      (value: string[] | void) => setSentenceArray(value as string[])
+      (value: string[] | void) => {
+        setSentenceArray(value as string[]);
+        const interval = setInterval(() => {
+          setWordNumber((wordNumber) => wordNumber + 1);
+          //setTimeout(() => setDisplay(""), 100);
+        }, INTERVAL_DELAY);
+        return () => clearInterval(interval);
+      }
     );
   }, [theme.experiment, theme.lineNumber, theme.list]);
-
-  useEffect(() => {
-    setSentenceArray(sentenceArray);
-  }, [sentenceArray]);
 
   const reset = () => {
     setWordNumber(1);
@@ -40,6 +37,7 @@ export default function EEGfMRIStudyPage() {
       lineNumber: theme["lineNumber"] + 1,
     });
   };
+  /*
   useEffect(() => {
     const interval = setInterval(() => {
       setTimeout(() => setDisplay(""), 200);
@@ -47,7 +45,7 @@ export default function EEGfMRIStudyPage() {
     }, INTERVAL_DELAY);
     return () => clearInterval(interval);
   }, []);
-
+  */
   useEffect(() => {
     //if they do more than x sentences, send them back
     if (theme["lineNumber"] >= MAX_LINE_NUMBER) {
@@ -59,7 +57,6 @@ export default function EEGfMRIStudyPage() {
     }
 
     if (wordNumber >= sentenceArray.length) {
-      //reset
       reset();
     }
     getWord(theme.experiment, theme.list, theme.lineNumber, wordNumber).then(

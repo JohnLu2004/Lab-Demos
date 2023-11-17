@@ -1,194 +1,104 @@
 {
   "0": {
-    "a": "This is a test sentence",
-    "b": "This is a test sentence",
-    "c": "This is a test sentence",
-    "d": "This is a test sentence"
+    "a": "The construction work that started last year finally ended successfully, so everyone around the construction site was happy",
+    "b": "The students had a great time at the party last night and this helped them to focus on their work next day.",
+    "c": "Children walked to the park nearby, speat some hours there, and then went home before it was dark outside.",
+    "d": "The soccer team won almost all games they had last year and it could be because the coach changed the start-up members. Did the soccer team lost many games? Yes No (Correct answer: No)"
   },
   "1": {
-    "a": "What are cartoons about enjoyed by Mary?",
-    "b": "What did the police receive Sam’s note about?",
-    "c": "The firm needed ideas about marketing.",
-    "d": "What did the students sing songs about?"
+    "a": "Though George kept on reading that stupid science fiction story #Susan# bothered him.",
+    "b": "Though George kept on reading that stupid science fiction story #really# bothered him.",
+    "c": "Though George kept on reading the story #Susan# bothered him.",
+    "d": "Though George kept on reading the story #really# bothered him."
   },
   "2": {
-    "a": "What was a sketch of admired by the man?",
-    "b": "Was a note about the ransom received by the police?",
-    "c": "The judge read Chuck’s article about crime.",
-    "d": "John discovered Bob’s of pictures the suspect."
+    "a": "After you drank the strange-looking water #they# discovered it was polluted.",
+    "b": "After you drank the strange-looking water #was# discovered to be polluted.",
+    "c": "After you drank the water #they# discovered it was polluted.",
+    "d": "After you drank the water #was# discovered to be polluted."
   },
   "3": {
-    "a": "Were sketches of the thief circulated by the police?",
-    "b": "What did the students enjoy a review of?",
-    "c": "The widow asked for Fred’s advice about taxes.",
-    "d": "Jill despises &chard’s about films murder."
+    "a": "While Mary was mending the old grandfather clock in the hall #it# started chiming.",
+    "b": "While Mary was mending the old grandfather clock in the hall #started# to chime.",
+    "c": "While Mary was mending the clock #it# started chiming.",
+    "d": "While Mary was mending the clock #started# to chime."
   },
   "4": {
-    "a": "The police circulated a sketch of the thief.",
-    "b": "Who did Wendy see Jean’s pictures of?",
-    "c": "What was a note about received by the police?",
-    "d": "The visitors accepted advice about the money."
+    "a": "Before the king rides his beautiful white horse #it's# always groomed.",
+    "b": "Before the king rides his beautiful white horse #is# always groomed.",
+    "c": "Before the king rides his horse #it's# always groomed.",
+    "d": "Before the king rides his horse #is# always groomed."
   },
   "5": {
-    "a": "What do most people enjoy Jim’s stories about?",
-    "b": "The visitors accepted Gary’s shadow about the money.",
-    "c": "Was a report about drugs published by the editor?",
-    "d": "What did the professor praise a poem about?"
+    "a": "Wherever Alice walks her shaggy sheep dog #men# follow.",
+    "b": "Wherever Alice walks her shaggy sheep dog #will# follow.",
+    "c": "Wherever Alice walks her dog #men# follow.",
+    "d": "Wherever Alice walks her dog #will# follow."
   },
   "6": {
-    "a": "What did the children enjoy stories about?",
-    "b": "Anne resented comments about her looks.",
-    "c": "Were complaints about the noise ignored by the women?",
-    "d": "The editor published Harry’s report about drugs."
+    "a": "Because my son likes to visit people who are older #the# neighbors think he's terrific.",
+    "b": "Because my son likes to visit people who are older #think# he's a terrific neighbor.",
+    "c": "Because my son likes to visit old people #the# neighbors think he's terrific.",
+    "d": "Because my son likes to visit old people #think# he's a terrific neighbor."
   },
   "7": {
-    "a": "The students enjoyed Bill’s justice of the play.",
-    "b": "The widow asked for Fred’s about advice taxes.",
-    "c": "The man bought a painting of the ocean.",
-    "d": "What did the visitors accept advice about?"
+    "a": "Since Jay always jogs a mile and a half #this# seems like a short distance to him.",
+    "b": "Since Jay always jogs a mile and a half #really# seems like a very short distance to him.",
+    "c": "Since Jay always jogs a mile #this# seems like a short distance to him.",
+    "d": "Since Jay always jogs a mile #really# seems like a very short distance to him."
   },
   "8": {
-    "a": "The newspaper printed a picture of the accident.",
-    "b": "The man bought Larry’s painting of the ocean.",
-    "c": "The women ignored John’s about complaints the noise.",
-    "d": "What did the women ignore complaints about?"
+    "a": "Though Hilda finally agreed to sing the German Christmas carols #it# turned out her voice was just beautiful.",
+    "b": "Though Hilda finally agreed to sing the German Christmas carols she chose #turned# out to be just beautiful.",
+    "c": "Though Hilda finally agreed to sing the songs #it# turned out her voice was just beautiful.",
+    "d": "Though Hilda finally agreed to sing the songs she chose #turned# out to be just beautiful."
   },
   "9": {
-    "a": "The students enjoyed Bill’s review of the play.",
-    "b": "What did the visitors accept Gary’s advice about?",
-    "c": "What did the editor publish a report about?",
-    "d": "Were jokes about the Queen disliked by the people."
+    "a": "Anne was watching the people on the street #she# laughed and nobody knew why.",
+    "b": "Anne was watching the people on the street #were# laughing and nobody knew why.",
+    "c": "Anne was watching you #she# laughed and nobody knew why.",
+    "d": "Anne was watching you #were# laughing and nobody knew why."
   },
   "10": {
-    "a": "The boys saw Ted’s films about America.",
-    "b": "Was a review of the play enjoyed by the students?",
-    "c": "What did the man buy Larry’s painting of?",
-    "d": "What did the editor publish Harry’s report about?"
+    "a": "John was cheering the little boy #Gerry# was pitching and Tom was shouting.",
+    "b": "John was cheering the little boy #was# pitching and Gerry was coaching Tom.",
+    "c": "John was cheering Jack #Gerry# was cheering and Tom was shouting.",
+    "d": "John was cheering Jack #was# pitching and Gerry was coaching Tom."
   },
   "11": {
-    "a": "Anne resented Tom’s about comments’ her looks.",
-    "b": "Jill despises films about murder.",
-    "c": "The scientist criticized Max’s event of the theorem.",
-    "d": "What was a picture of printed by the newspaper?"
+    "a": "The children were playing a very comical game of football #the# television was on and Granny was knitting.",
+    "b": "The children were playing a very comical game of football #was# on television and Granny was knitting.",
+    "c": "The children were playing football #the# television was on and Granny was knitting.",
+    "d": "The children were playing football #was# on television and Granny was knitting."
   },
   "12": {
-    "a": "Are stories about the past enjoyed by most people?",
-    "b": "Who were pictures of seen by Wendy?",
-    "c": "Who do the people dislike Fred’s jokes about?",
-    "d": "What was a poem about praised by the professor?"
+    "a": "The irate customers were the new young manager #all# the waiters were running back and forth and everyone seemed extremely upset.",
+    "b": "The irate customers were cursing the new young manager #was# running back and forth to the kitchen and everyone seemed extremely upset.",
+    "c": "The irate customers were cursing the manager #all# the waiters were running back and forth and everyone seemed extremely upset.",
+    "d": "The irate customers were cursing the manager #was# running back and forth to the kitchen and everyone seemed extremely upset."
   },
   "13": {
-    "a": "Were pictures of the suspect discovered by John?",
-    "b": "What was a speech about discussed by the students?",
-    "c": "The students sang songs about freedom.",
-    "d": "What did the crowd shout Marx’s slogans about peace."
+    "a": "Last year my roommate was constantly cleaning our little farmhouse #it# always looked absolutely spotless and I simply couldn't stand it.",
+    "b": "Last year my roommate was constantly cleaning our little farmhouse #always# looked absolutely spotless and I simply couldn't stand it.",
+    "c": "Last year my roommate was constantly cleaning the house #it# always looked absolutely spotless and I simply couldn't stand it.",
+    "d": "Last year my roommate was constantly cleaning the house #always# looked absolutely spotless and I simply couldn't stand it."
   },
   "14": {
-    "a": "The lady sold Mary’s commitment of her father.",
-    "b": "Wendy saw Jean’s pictures of her friends.",
-    "c": "What did the firm need Mike’s ideas about?",
-    "d": "The boys saw Ted’s about films America."
+    "a": "Sally spent all last night writing a long-term paper #her# history exam is tomorrow and she looks completely exhausted.",
+    "b": "Sally spent all last night writing a long-term paper #will# be due tomorrow and she already looks completely exhausted.",
+    "c": "Sally spent all last night writing another paper #her# history exam is tomorrow and she looks completely exhausted.",
+    "d": "Sally spent all last night writing another paper #will# be due tomorrow and she already looks completely exhausted."
   },
   "15": {
-    "a": "What did the man buy a painting of?",
-    "b": "What did the editor publish Harry’s report about?",
-    "c": "Anne resented Tom’s about comments’ her looks.",
-    "d": "Jill despises films about murder."
+    "a": "My little brother is cooking the barbecued chicken wings #everything# else is burned to a crisp and so apparently we won't have anything to eat for dinner.",
+    "b": "My little brother is cooking the barbecued chicken wings #are# burned to a crisp and so apparently we're not going to have anything to eat for dinner.",
+    "c": "My little brother is cooking the chicken #everything# else is burned to a crisp and so apparently we won't have anything to eat for dinner.",
+    "d": "My little brother is cooking the chicken #is# burned to a crisp and so apparently we're not going to have anything to eat for dinner."
   },
   "16": {
-    "a": "The scientist criticized Max’s event of the theorem.",
-    "b": "What was a picture of printed by the newspaper?",
-    "c": "Are stories about the past enjoyed by most people?",
-    "d": "Who were pictures of seen by Wendy."
-  },
-  "17": {
-    "a": "Who do the people dislike Fred’s jokes about?",
-    "b": "What was a poem about praised by the professor?",
-    "c": "Were pictures of the suspect discovered by John?",
-    "d": "What was a speech about discussed by the students."
-  },
-  "18": {
-    "a": "The students sang songs about freedom.",
-    "b": "What did the crowd shout Marx’s slogans about peace.",
-    "c": "What are stories about enjoyed by most people?",
-    "d": "Mary enjoys Terry’s about cartoons animals."
-  },
-  "19": {
-    "a": "John discovered pictures of the suspect.",
-    "b": "What did the students discuss a speech about?",
-    "c": "The boys saw Ted’s climate about America.",
-    "d": "What did the crowd shout slogans about?"
-  },
-  "20": {
-    "a": "Was a poem about the moon praised by the professor?",
-    "b": "Who was a portrait of sold by the lady?",
-    "c": "Mary enjoys Terry’s door about animals.",
-    "d": "The students discussed a speech about migrants."
-  },
-  "21": {
-    "a": "The newspaper printed Ivan’s diamond of the accident.",
-    "b": "The police received Sam’s note about the ransom.",
-    "c": "Was an article about crime read by the judge?",
-    "d": "The students discussed Frank’s about speech migrants."
-  },
-  "22": {
-    "a": "John discovered Bob’s duration of the suspect.",
-    "b": "The children enjoyed stories about the farm.",
-    "c": "Was advice about the money accepted by the visitors?",
-    "d": "The students enjoyed a review of the play."
-  },
-  "23": {
-    "a": "The police received Sam’s about note the ransom.",
-    "b": "Jill despises Richard’s moon about murder.",
-    "c": "Who did the lady sell a portrait of?",
-    "d": "The firm needed Mike’s admiration about marketing."
-  },
-  "24": {
-    "a": "What was advice about asked for by the widow?",
-    "b": "The people disliked Fred’s bud about the Queen.",
-    "c": "What did the boys see Ted’s films about?",
-    "d": "The students discussed Frank’s quantum about migrants."
-  },
-  "25": {
-    "a": "What did the network broadcast Kevin’s lecture about?",
-    "b": "The police received Sam’s dream about the ransom.",
-    "c": "The newspaper printed Ivan’s of picture the accident.",
-    "d": "Were slogans about peace shouted by the crowd."
-  },
-  "26": {
-    "a": "The scientist criticized Max’s of proof the theorem.",
-    "b": "Who were pictures of discovered by John?",
-    "c": "Who did John discover Bob’s pictures of?",
-    "d": "The man read Peter’s report of the case."
-  },
-  "27": {
-    "a": "What does Jill despise Richard’s films about?",
-    "b": "The professor praised Alan’s sleep about the moon.",
-    "c": "What was advice about accepted by the visitors?",
-    "d": "The women ignored John’s complaints about the noise."
-  },
-  "28": {
-    "a": "The students discussed Frank’s quantum about migrants.",
-    "b": "The police circulated Ruth’s of sketch the thief.",
-    "c": "What were films about seen by the boys?",
-    "d": "What did the professor praise Alan’s poem about?"
-  },
-  "29": {
-    "a": "Anne resented Tom’s comments about her looks.",
-    "b": "The firm needed Mike’s about ideas marketing.",
-    "c": "Was a sketch of the landscape admired by the man?",
-    "d": "Were songs about freedom sung by the students."
-  },
-  "30": {
-    "a": "What were ideas about needed by the firm?",
-    "b": "Wendy saw pictures of her friends.",
-    "c": "The professor praised Alan’s about poem the moon.",
-    "d": "What was a report about read over by the man."
-  },
-  "31": {
-    "a": "Most people enjoy stories about the past.",
-    "b": "Were comments about her looks resented by Anne?",
-    "c": "What was a report about published by the editor?",
-    "d": "Who did the police circulate a sketch of?"
+    "a": "Susie was pushing the big red wagon #it# wouldn't move an inch and so the boys were all cheering her.",
+    "b": "Susie was pushing the big red wagon #wouldn't# move an inch and so the boys were all cheering her.",
+    "c": "Susie was pushing the wagon #it# wouldn't move an inch and so the boys were all cheering her.",
+    "d": "Susie was pushing the wagon #wouldn't# move an inch and so the boys were all cheering her."
   }
 }
